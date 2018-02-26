@@ -12,6 +12,53 @@ The methods as descriped does not need to be advanced or complicated. Simple met
 ## Ressources
 
 ## Unit Tests
+#### Usual test cases
+
+#### Boundary analysis
+
+
+
+#### Equivalence classes
+##### CreatePolygons
+Class        | Testcase
+------------ | -----------------
+2 < sides.count < 11 | 5 valid, 1 invalid
+0 < sides.value < big.int | valid: 525, -5 invalid.
+
+- To be a recognized polygon, it needs to have atleast 3 sides. In this case, we have limited it to 10 to not get to extreme.
+
+
+#### CalculatePolygonType
+Class | Testcase
+----- | ----------
+side[i] < ∑(!side[i]) | invalid [1,2,3], valid [2,2,2]
+
+- Any given side most be less than the summation of all other sides.
+
+#### CalculateArea & CalculateAnglesFromTriangle
+Class | Testcase
+----- | ------------
+sides.count == 3 | valid: 3, invalid: 4
+
+- To calculate area or angles only based on sides, it is limited to triangles.
+
+#### RemoveSide
+Class | Testcase
+----- | ------------
+-1 < index < sides.count | valid: sides 4 - index 2, invalid: sides 4 - index 5
+
+- Index needs to be known in the polygon, cannot remove side which polygon doesn't have. (OutOfBounds)
+
+#### IntersectPerimeterPolygon
+Class | Testcase
+Polygon a perimeter > Polygon b perimeter | Valid: A - 45 . B - 30, Invalid: A - 30 . B 50
+
+#### SortByArea
+Class | Testcase
+----- | --------
+Side count of array[i] == 3 | N/A
+
+- All polygons within the array needs to be triangles to determine area only based on sides.
 
 ## Solution
 
