@@ -7,6 +7,8 @@ This excercise is to create an interface. Make unit tests for the interface, and
 ## Interface
 The methods as descriped does not need to be advanced or complicated. Simple methods as examples provided in the excercise description.
 
+
+
 ## Ressources
 
 ## Unit Tests
