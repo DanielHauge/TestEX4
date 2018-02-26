@@ -6,19 +6,58 @@ This excercise is to create an interface. Make unit tests for the interface, and
 
 ## Interface
 The methods as descriped does not need to be advanced or complicated. Simple methods as examples provided in the excercise description.
+The interface methods are as below:
 
+```java
+    public Polygon CreatePolygon(double[] sides) throws Exception;
 
+    public String CalculatePolygonType(Polygon p) throws Exception;
+
+    public double CalculateArea(Polygon p) throws Exception;
+
+    public Polygon RemoveSide(int index, Polygon p) throws Exception;
+
+    public double[] CalculateAnglesFromTriangle(Polygon p) throws Exception;
+
+    public Polygon ComparePolygonByPerimeter(Polygon a, Polygon b) throws Exception;
+
+    public double IntersectPerimeterPolygon(Polygon a, Polygon b) throws Exception;
+
+    public double UnionPerimeterPolygon(Polygon a, Polygon b) throws Exception;
+
+    public ArrayList<Polygon> SortByArea(ArrayList<Polygon> polygonArrayList) throws Exception;
+
+    public ArrayList<Polygon> SortByPerimeter(ArrayList<Polygon> polygonArrayList) throws Exception;
+```
+- Note: Javadocs included in java file. [HERE]()
 
 ## Ressources
+A Polygon class has been used as a ressource (Class) in the interface. It is realy simple, just to handle objects instead of native data values (For better improving later on).
+
+```java
+public class Polygon {
+
+    public double sides[];
+
+    public void Print(){
+        System.out.println("Sides of polygon");
+        for (double side : sides) {
+            System.out.println(side);
+        }
+    }
+    
+}
+```
 
 ## Unit Tests
-#### Usual test cases
+#### First derived test cases
+The first set of cases are just to see if the methods work as inteded when used correctly or normal cases. These tests can be found in the testing class [PolygonHandlerTest](link). It is the first 10 unit tests, and is basicly just testing little bit of normal behavior.
 
-#### Boundary analysis
+### Boundary analysis
 
 
 
-#### Equivalence classes
+### Equivalence classes
 ##### CreatePolygons
 Class        | Testcase
 ------------ | -----------------
@@ -26,7 +65,6 @@ Class        | Testcase
 0 < sides.value < big.int | valid: 525, -5 invalid.
 
 - To be a recognized polygon, it needs to have atleast 3 sides. In this case, we have limited it to 10 to not get to extreme.
-
 
 #### CalculatePolygonType
 Class | Testcase
