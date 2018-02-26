@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba7b19dd-fbc5-4796-ae33-a5e81de1798b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TriangleStuff/TriangleStuff.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TriangleStuff/src/Polygon.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TriangleStuff/src/Polygon.java" afterPath="$PROJECT_DIR$/TriangleStuff/src/Polygon.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandler.java" afterPath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerImpl.java" afterPath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java" afterPath="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,23 +17,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PolygonHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PolygonHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="445">
+              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;method#CreatePolygon#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#CalculatePolygonType#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#CalculateArea#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#RemoveSide#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#CalculateAnglesFromTriangle#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#ComparePolygonByPerimeter#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#IntersectPerimeterPolygon#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#UnionPerimeterPolygon#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#SortByArea#0;class#PolygonHandler#0" expanded="false" />
+                <element signature="docComment;method#SortByPerimeter#0;class#PolygonHandler#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PolygonHandlerImpl.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PolygonHandlerImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,12 +52,43 @@
       <file leaf-file-name="PolygonHandlerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
-                <element signature="e#232#233#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="method#createPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#calculatePolygonType#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#calculateArea#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#removeSide#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#calculateAnglesFromTriangle#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#comparePolygonByPerimeter#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#intersectPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#unionPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#sortByArea#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="e#6418#6427#0" expanded="true" />
+                <element signature="method#sortByPerimeter#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="e#7840#7849#0" expanded="true" />
+                <element signature="method#BoundaryCreate#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#BoundaryRemoveSide#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#EquivalenceClassType#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#EquivalenceClassCalculateAreaAndAngles#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#EquivalenceClassIntersectPerimeterPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="method#EquivalenceClassSortByArea#0;class#PolygonHandlerTest#0" expanded="false" />
+                <element signature="e#13931#13940#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PolygonHandlerImpl.class" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/production/TriangleStuff/PolygonHandlerImpl.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#1300#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,8 +97,8 @@
       <file leaf-file-name="Polygon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TriangleStuff/src/Polygon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
+            <state relative-caret-position="-7">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -88,10 +127,10 @@
       <list>
         <option value="$PROJECT_DIR$/TriangleStuff/src/TriangleHandler.java" />
         <option value="$PROJECT_DIR$/TriangleStuff/src/Triangle.java" />
-        <option value="$PROJECT_DIR$/TriangleStuff/src/PolygonHandler.java" />
-        <option value="$PROJECT_DIR$/TriangleStuff/src/Polygon.java" />
-        <option value="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java" />
         <option value="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerImpl.java" />
+        <option value="$PROJECT_DIR$/TriangleStuff/src/Polygon.java" />
+        <option value="$PROJECT_DIR$/TriangleStuff/src/PolygonHandler.java" />
+        <option value="$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java" />
       </list>
     </option>
   </component>
@@ -151,7 +190,8 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -176,7 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PolygonHandlerTest.createPolygon">
+  <component name="RunManager" selected="JUnit.PolygonHandlerTest">
     <configuration name="PolygonHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TriangleStuff" />
@@ -304,8 +344,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.PolygonHandlerTest.createPolygon" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.PolygonHandlerTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.PolygonHandlerTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.PolygonHandlerTest.createPolygon" />
       </list>
     </recent_temporary>
   </component>
@@ -323,6 +363,9 @@
     <servers />
   </component>
   <component name="TestHistory">
+    <history-entry file="PolygonHandlerTest - 2018.02.26 at 20h 56m 05s.xml">
+      <configuration name="PolygonHandlerTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="PolygonHandlerTest_createPolygon - 2018.02.26 at 15h 29m 37s.xml">
       <configuration name="PolygonHandlerTest.createPolygon" configurationId="JUnit" />
     </history-entry>
@@ -333,6 +376,12 @@
       <configuration name="PolygonHandlerTest.createPolygon" configurationId="JUnit" />
     </history-entry>
     <history-entry file="PolygonHandlerTest_createPolygon - 2018.02.26 at 15h 33m 26s.xml">
+      <configuration name="PolygonHandlerTest.createPolygon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PolygonHandlerTest_createPolygon - 2018.02.26 at 15h 57m 57s.xml">
+      <configuration name="PolygonHandlerTest.createPolygon" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="PolygonHandlerTest_createPolygon - 2018.02.26 at 16h 12m 32s.xml">
       <configuration name="PolygonHandlerTest.createPolygon" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -348,12 +397,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.369035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -372,45 +421,94 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/production/TriangleStuff/PolygonHandlerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TriangleStuff/src/Polygon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="-7">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerImpl.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/junit/lib/junit-jupiter-api-5.0.0.jar!/org/junit/jupiter/api/function/Executable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="264">
+          <caret line="16" column="9" lean-forward="false" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#232#233#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="445">
+          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#CreatePolygon#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#CalculatePolygonType#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#CalculateArea#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#RemoveSide#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#CalculateAnglesFromTriangle#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#ComparePolygonByPerimeter#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#IntersectPerimeterPolygon#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#UnionPerimeterPolygon#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#SortByArea#0;class#PolygonHandler#0" expanded="false" />
+            <element signature="docComment;method#SortByPerimeter#0;class#PolygonHandler#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="method#createPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#calculatePolygonType#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#calculateArea#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#removeSide#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#calculateAnglesFromTriangle#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#comparePolygonByPerimeter#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#intersectPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#unionPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#sortByArea#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="e#6418#6427#0" expanded="true" />
+            <element signature="method#sortByPerimeter#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="e#7840#7849#0" expanded="true" />
+            <element signature="method#BoundaryCreate#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#BoundaryRemoveSide#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#EquivalenceClassType#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#EquivalenceClassCalculateAreaAndAngles#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#EquivalenceClassIntersectPerimeterPolygon#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="method#EquivalenceClassSortByArea#0;class#PolygonHandlerTest#0" expanded="false" />
+            <element signature="e#13931#13940#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TriangleStuff/src/PolygonHandlerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -466,7 +564,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>TestEX4</last-edited>
+          <last-edited>TriangleStuff</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
