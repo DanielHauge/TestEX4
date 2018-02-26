@@ -1,4 +1,4 @@
-# TestEX4
+# Test excercise 4 (AP Degree Exam)
 This repository is a exercise project for Software development (PBA) Test course. Daniel (cph-dh136)
 
 ## Description
