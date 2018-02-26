@@ -32,7 +32,7 @@ The interface methods are as below:
 - Note: Javadocs included in java file. [HERE]()
 
 ## Ressources
-A Polygon class has been used as a ressource (Class) in the interface. It is realy simple, just to handle objects instead of native data values (For better improving later on).
+A Polygon class has been used as a ressource (Class) in the interface. It is realy simple.
 
 ```java
 public class Polygon {
