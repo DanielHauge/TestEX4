@@ -51,7 +51,7 @@ public class Polygon {
 
 ## Unit Tests
 #### First derived test cases
-The first set of cases are just to see if the methods work as inteded when used correctly or normal cases. These tests can be found in the testing class [PolygonHandlerTest](link). It is the first 10 unit tests, and is basicly just testing little bit of normal behavior.
+The first set of cases are just to see if the methods work as inteded when used correctly or normal cases. These tests can be found in the testing class [PolygonHandlerTest](TriangleStuff/src/PolygonHandlerTest.java). It is the first 10 unit tests, and is basicly just testing little bit of normal behavior.
 
 ### Boundary analysis
 
@@ -117,6 +117,9 @@ Class | Testcase
 Side count of array[i] == 3 | N/A
 
 - All polygons within the array needs to be triangles to determine area only based on sides.
+
+--------------------------
+All unit tests can be found in this file [PolygonHandlerTest](TriangleStuff/src/PolygonHandlerTest.java). Including tests derived from Boundary and Equivelance classes.
 
 ## Solution
 
