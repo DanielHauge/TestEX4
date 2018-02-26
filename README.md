@@ -55,7 +55,27 @@ The first set of cases are just to see if the methods work as inteded when used 
 
 ### Boundary analysis
 
+#### CreatePolygons
 
+- Side amount
+
+Invalid | Valid   | Invalid
+------- | ------- | -----------
+-∞    2 | 3    10 | 11    ∞
+
+- Side value
+
+Invalid | Valid          | Invalid
+------- | -------------- | -----------
+-∞    0 | 0.???  int.max | double.max+1     ∞
+
+#### RemoveSide
+
+- Index
+
+Invalid   | Valid                    | Invalid
+--------- | ------------------------ | -----------
+-∞     -1 | 0   polygon.side.count-1 | polygon.side.count     ∞
 
 ### Equivalence classes
 ##### CreatePolygons
