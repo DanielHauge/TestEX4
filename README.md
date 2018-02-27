@@ -122,4 +122,18 @@ Side count of array[i] == 3 | N/A
 All unit tests can be found in this file [PolygonHandlerTest](TriangleStuff/src/PolygonHandlerTest.java). Including tests derived from Boundary and Equivelance classes.
 
 ## Solution
+- First take on implementation:
+[![https://gyazo.com/953a89b3a53babe632487fc43801e0c5](https://i.gyazo.com/953a89b3a53babe632487fc43801e0c5.png)](https://gyazo.com/953a89b3a53babe632487fc43801e0c5)
 
+Some tests passed, some tests failed. Got to look closer to those who failed the tests.
+
+When looking into the errors. They were incorrect number format, this comes from the DecimalFormatter. So i changed the DecimalFormatter to a coma from a dot.
+```java
+DecimalFormat df = new DecimalFormat("#,###");
+```
+That solved most of the test cases that was failing because of this formatting issue. Another reason for some of the tests that fails, is because the implementation needed another type of exception to work on comparator. "AssertionError" instead of a regular exception. That needs to be changed in the testing instead of the implementation. Therefor changed the tests on Calculate area exceptions to AssertionError instead of regular Exception.
+```java
+assertThrows(AssertionError.class, () -> {     double area = PH.CalculateArea(finalP);   });
+```
+
+- There was also a typo in the SortByPerimeter test, that had one of the sides an additional value which wasn't asserted to fail. It was meant for the addtional decimal to not be there. And also in the create Polygon, 1,1,2 isn't a valid polygon therefor changed to 1,2,2.
