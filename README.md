@@ -122,6 +122,7 @@ Side count of array[i] == 3 | N/A
 All unit tests can be found in this file [PolygonHandlerTest](TriangleStuff/src/PolygonHandlerTest.java). Including tests derived from Boundary and Equivelance classes.
 
 ## Solution
+The finished implementation can be found here [PolygonHandlerImpl](TriangleStuff/src/PolygonHandlerImpl.java)
 - First take on implementation:
 [![https://gyazo.com/953a89b3a53babe632487fc43801e0c5](https://i.gyazo.com/953a89b3a53babe632487fc43801e0c5.png)](https://gyazo.com/953a89b3a53babe632487fc43801e0c5)
 
@@ -157,3 +158,7 @@ assertTrue(biggest.sides==b.sides&&biggest!=null);
 ```
 Now all tests pass.
 [![https://gyazo.com/868b7da714c916e8ab0d6a82233d2951](https://i.gyazo.com/868b7da714c916e8ab0d6a82233d2951.png)](https://gyazo.com/868b7da714c916e8ab0d6a82233d2951)
+
+--------------------------------
+
+The finished implementation can be found here [PolygonHandlerImpl](TriangleStuff/src/PolygonHandlerImpl.java)
