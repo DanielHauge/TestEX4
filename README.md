@@ -136,4 +136,24 @@ That solved most of the test cases that was failing because of this formatting i
 assertThrows(AssertionError.class, () -> {     double area = PH.CalculateArea(finalP);   });
 ```
 
-- There was also a typo in the SortByPerimeter test, that had one of the sides an additional value which wasn't asserted to fail. It was meant for the addtional decimal to not be there. And also in the create Polygon, 1,1,2 isn't a valid polygon therefor changed to 1,2,2.
+There was also a typo in the SortByPerimeter test, that had one of the sides an additional value which wasn't asserted to fail. It was meant for the addtional decimal to not be there. And also in the create Polygon, 1,1,2 isn't a valid polygon therefor changed to 1,2,2.
+
+- Second take
+[![https://gyazo.com/a10fe5b659b1cf792e51d817a67e65c1](https://i.gyazo.com/a10fe5b659b1cf792e51d817a67e65c1.png)](https://gyazo.com/a10fe5b659b1cf792e51d817a67e65c1)
+Still some errors. 1 with multiple points and then some java.lang.NumberFormatException: multiple points, but still got some weird errors on the parsing of the double. I later figured out, that for it to work. I needed to make a DecimalFormatSybol seperator. So therefor added this to the implementation:
+```java
+DecimalFormat df = new DecimalFormat("#.###");
+DecimalFormatSymbols dfs = new DecimalFormatSymbols();
+dfs.setDecimalSeparator('.');
+df.setDecimalFormatSymbols(dfs);
+```
+And changed the decimalformatter back to ```.```. This seemed to work.
+
+- Third take
+[![https://gyazo.com/5a52aa7a18f25c3d813a48e460d546d2](https://i.gyazo.com/5a52aa7a18f25c3d813a48e460d546d2.png)](https://gyazo.com/5a52aa7a18f25c3d813a48e460d546d2)
+Only test that doesn't pass, is the ComparePolygonByPerimeter. Then i noticed, that i was asserting something that should be wrong. The perimeter of the one i initially set to be the biggest was 9 in perimeter, but the one i thought was the smallest was 9.1 in perimeter. So i was asserting the wrong thing. So now asserting the actual biggest to be the biggest of the 2.
+```java
+assertTrue(biggest.sides==b.sides&&biggest!=null);
+```
+Now all tests pass.
+[![https://gyazo.com/868b7da714c916e8ab0d6a82233d2951](https://i.gyazo.com/868b7da714c916e8ab0d6a82233d2951.png)](https://gyazo.com/868b7da714c916e8ab0d6a82233d2951)
