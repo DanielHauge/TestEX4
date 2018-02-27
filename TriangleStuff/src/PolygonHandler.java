@@ -24,7 +24,7 @@ public interface PolygonHandler {
      * @return A double value which represent the area in squaremeters
      * @throws Exception If polygon object is invalid or non determinerable without angles.
      */
-    public double CalculateArea(Polygon p) throws Exception;
+    public double CalculateArea(Polygon p) throws AssertionError;
     /**
      * This method will remove one of the sides of the polygon
      * @param index The side which will be removed

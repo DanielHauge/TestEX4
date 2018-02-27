@@ -18,7 +18,7 @@ class PolygonHandlerTest {
      */
     @org.junit.jupiter.api.Test
     void createPolygon() throws Exception {
-        double[] sides = {1,1,2};
+        double[] sides = {1,2,2};
         Polygon P = PH.CreatePolygon(sides);
         assertTrue(sides==P.sides);
     }
@@ -168,7 +168,8 @@ class PolygonHandlerTest {
         Polygon b = PH.CreatePolygon(sides);
         Polygon biggest = PH.ComparePolygonByPerimeter(a, b);
 
-        assertTrue(biggest==a&&biggest!=null);
+        assertTrue(biggest.sides==b.sides&&biggest!=null);
+
 
     }
     @org.junit.jupiter.api.Test
@@ -200,17 +201,17 @@ class PolygonHandlerTest {
     @org.junit.jupiter.api.Test
     void sortByArea() throws Exception {
 
-        double[] sides = {7,5,6};
+        double[] sides = {7 , 5 , 6};
         Polygon a = PH.CreatePolygon(sides);
-        sides = new double[] {3,3,3};
+        sides = new double[] {3 , 3 , 3};
         Polygon b = PH.CreatePolygon(sides);
-        sides = new double[] {56,46,67};
+        sides = new double[] {56 , 46 , 67};
         Polygon c = PH.CreatePolygon(sides);
-        sides = new double[] {1,1,1};
+        sides = new double[] {1 , 1 , 1};
         Polygon d = PH.CreatePolygon(sides);
-        sides = new double[] {4500,4000,5000};
+        sides = new double[] {4500 , 4000 , 5000};
         Polygon e = PH.CreatePolygon(sides);
-        sides = new double[] {3,4,5};
+        sides = new double[] {3 , 4 , 5 };
         Polygon f = PH.CreatePolygon(sides);
 
         ArrayList<Polygon> list = new ArrayList<Polygon>();
@@ -224,12 +225,12 @@ class PolygonHandlerTest {
         ArrayList<Polygon> sortedlist = PH.SortByArea(list);
 
         assertAll(
-                () -> assertTrue(sortedlist.get(0) ==d),
-                () -> assertTrue(sortedlist.get(1) == b),
-                () -> assertTrue(sortedlist.get(2) == f),
-                () -> assertTrue(sortedlist.get(3) == a),
-                () -> assertTrue(sortedlist.get(4)==c),
-                () -> assertTrue(sortedlist.get(5)==e)
+                () -> assertTrue(sortedlist.get(0).sides[1] == d.sides[1]),
+                () -> assertTrue(sortedlist.get(1).sides == b.sides),
+                () -> assertTrue(sortedlist.get(2).sides == f.sides),
+                () -> assertTrue(sortedlist.get(3).sides == a.sides),
+                () -> assertTrue(sortedlist.get(4).sides == c.sides),
+                () -> assertTrue(sortedlist.get(5).sides == e.sides)
         );
 
 
@@ -243,7 +244,7 @@ class PolygonHandlerTest {
         Polygon a = PH.CreatePolygon(sides);
         sides = new double[] {3,3,3 ,3 ,3};
         Polygon b = PH.CreatePolygon(sides);
-        sides = new double[] {56,46,67, 69, 53, 532 , 23};
+        sides = new double[] {56,46,67, 69, 53, 53 , 23};
         Polygon c = PH.CreatePolygon(sides);
         sides = new double[] {1,1,1};
         Polygon d = PH.CreatePolygon(sides);
@@ -384,7 +385,7 @@ class PolygonHandlerTest {
         p = PH.CreatePolygon(sides);
         Polygon finalP = p;
         assertThrows(Exception.class, () -> {     double[] angles = PH.CalculateAnglesFromTriangle(finalP);   });
-        assertThrows(Exception.class, () -> {     double area = PH.CalculateArea(finalP);   });
+        assertThrows(AssertionError.class, () -> {     double area = PH.CalculateArea(finalP);   });
 
         // With 2 sides. Invalid = Cannot even create polygon with 2 sides only.
         sides = new double[]{6,5};
