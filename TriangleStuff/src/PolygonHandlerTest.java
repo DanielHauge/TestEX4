@@ -22,6 +22,7 @@ class PolygonHandlerTest {
         Polygon P = PH.CreatePolygon(sides);
         assertTrue(sides==P.sides);
     }
+
     @org.junit.jupiter.api.Test
     void calculatePolygonType() throws Exception {
 
