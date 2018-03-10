@@ -1,5 +1,10 @@
-public class Polygon {
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+import java.io.Serializable;
+
+public class Polygon implements Serializable {
+
+    @JsonSerialize
     public double sides[];
 
     public void Print(){
